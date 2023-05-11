@@ -1,0 +1,66 @@
+main {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #615E76;
+}
+
+
+.bottom--80 {
+    bottom: -88px;
+}
+
+.p-400 {
+    font-weight: 400;
+}
+
+.p-600 {
+    font-weight: 600;
+}
+
+.p-16 {
+    font-size: 18px;
+    line-height: 26px;
+
+    @media(max-width: 1600px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.p-22 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.pagination-danger {
+    --swiper-theme-color: #D9476D;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.bg-roxo {
+    background: linear-gradient(45deg, #272342 0%, #615E76 100%);
+}
+
+.rounded-40-top {
+    @media(max-width:992px) {
+        border-radius: 40px 40px 0px 0px !important;
+    }
+}
+
+.rounded-40-bottom {
+    @media(max-width:992px) {
+        border-radius: 0px 0px 40px 40px !important;
+    }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none !important;
+}
