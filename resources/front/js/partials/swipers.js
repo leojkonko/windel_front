@@ -86,7 +86,7 @@ new Swiper(".empresa2-swiper", {
     },
 });
 new Swiper(".parceiros-swiper", {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 50,
     //rewind: false,
     navigation: {
@@ -124,6 +124,21 @@ new Swiper(".gallery-swiper", {
     },
     pagination: {
         el: ".gallery-swiper .swiper-pagination",
+        type: "bullets",
+        dynamicBullets: true,
+        clickable: true,
+    },
+});
+new Swiper(".produto-detalhe-swiper", {
+    //rewind: false,
+    slidesPerView: 1,
+    spaceBetween: 1,
+    navigation: {
+        nextEl: ".produto-detalhe-swiper .swiper-button-next",
+        prevEl: ".produto-detalhe-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".produto-detalhe-swiper .swiper-pagination",
         type: "bullets",
         dynamicBullets: true,
         clickable: true,

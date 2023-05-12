@@ -4,13 +4,15 @@
         <input type="text" placeholder="Nome completo*" class="form-control mb-0-50 mt-1" wire:model.defer="name" required>
     </div>
     <div class="col-12 mt-0">
-        <input type="email" placeholder="Email*" class="form-control mb-0-50" wire:model.defer="email" required>
-    </div>
-    <div class="col-12 mt-0">
         <input type="text" placeholder="Telefone*" class="form-control mb-0-50 mask-telefone" wire:model.defer="phone" required>
     </div>
     <div class="col-12 mt-0">
-        <input type="text" placeholder="CNPJ*" class="form-control mb-0-50" wire:model.defer="phone" required>
+        <select name="" id="" placeholder="Telefone*" class="form-control mb-0-50 mask-telefone">
+            <option value="">Setor de interesse *</option>
+        </select>
+    </div>
+    <div class="col-12 mt-0">
+        <input type="file" placeholder="CNPJ*" class="form-control mb-0-50" wire:model.defer="phone" required>
     </div>
     <div class="col-12 mt-0">
         <input type="text" placeholder="Assunto*" class="form-control mb-0-50" wire:model.defer="phone" required>

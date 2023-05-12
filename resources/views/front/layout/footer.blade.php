@@ -1,14 +1,16 @@
 <footer id="footer" class="overflow-hidden bg-cinza-claro">
     <div class="container">
-        <div class="row gy-2 gy-lg-0 text-center text-lg-start align-items-center justify-content-between py-2 py-lg-4">
-            <div class="col-12">
-                <a href="{{ route_lang('home') }}" class="d-block logo mb-3">
+        <div class="row gy-2 gy-lg-0 text-center text-lg-start align-items-center justify-content-between pt-2 pt-lg-4">
+            <div class="col-12 d-flex justify-content-center justify-content-lg-start">
+                <a href="{{ route_lang('home') }}" class="d-block logo mb-lg-3">
                     <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logo.svg') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
                 </a>
             </div>
-            <div class="col-lg-2">
-                <p class="p-22 p-600">Menu</p>
-                <ul class="list-unstyled">
+        </div>    
+        <div class="row gy-2 gy-lg-0 h-100 w-100 pb-2 pb-lg-4">
+            <div class="col-lg-2 d-flex align-items-start justify-content-center justify-content-lg-start flex-column">
+                <p class="p-22 p-600 w-100 text-lg-start text-center mt-3 mt-lg-0">Menu</p>
+                <ul class="list-unstyled text-lg-start text-center w-100">
                     <li>
                         <a href="" class="text-decoration-none">
                             Empresa
@@ -41,9 +43,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3">
-                <p class="p-22 p-600">Contatos</p>
-                <ul class="list-unstyled">
+            <div class="col-lg-3 d-flex align-items-start justify-content-center justify-content-lg-start flex-column">
+                <p class="p-22 p-600 w-100 text-lg-start text-center">Contatos</p>
+                <ul class="list-unstyled text-lg-start text-center w-100">
                     <li>
                         <a href="" target="_blank" class="text-decoration-none">
                             comercial@windel.com.br
@@ -55,20 +57,21 @@
                         </a>
                     </li>
                 </ul>
-                <p class="p-22 p-600">Endereço</p>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="" target="_blank" class="text-decoration-none">
-                            R. Visc. de Pelotas, 361, Centro
-Caxias do Sul-RS, 95020-180
-                        </a>
-                    </li>
-                </ul>
+                <div class="mt-3 mt-lg-0">
+                    <p class="p-22 p-600 w-100 text-lg-start text-center">Endereço</p>
+                    <ul class="list-unstyled text-lg-start text-center w-100">
+                        <li>
+                            <a href="" target="_blank" class="text-decoration-none">
+                                R. Visc. de Pelotas, 361, Centro
+    Caxias do Sul-RS, 95020-180
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-3 d-flex align-items-start mb-5">
-                <div>
-                    <p class="p-22 p-600">Redes sociais</p>
-                    <ul class="list-unstyled">
+            <div class="col-lg-3 d-flex align-items-start justify-content-center justify-content-lg-start flex-column">
+                    <p class="p-22 p-600 w-100 text-lg-start text-center">Redes sociais</p>
+                    <ul class="list-unstyled w-100 text-lg-start text-center">
                         <li>
                             <a href="" class="text-decoration-none">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,37 +120,40 @@ Caxias do Sul-RS, 95020-180
                             </a>
                         </li>
                     </ul>
-                </div>
             </div>
-            <div class="col-lg-4 border border-secondary rounded-40">
-                <div class="p-3">
+            <div class="col-lg-4">
+                <div class="p-lg-2 p-2 border border-secondary rounded-40">
                     <p class="p-22 p-600 text-lg-start">Área do cliente</p>
                     <form action="">
-                        <input type="text" class="w-100 form-control border-none mb-0-50">
-                        <div class="d-flex align-items-center gap-0-50">
-                            <input type="text" class="form-control border-none">
-                            <button class="btn btn-danger text-white rounded-40 p-16 p-400">ok</button>
+                        <input type="text" placeholder="CPF ou CNPJ" class="w-100 form-control border-none mb-0-50">
+                        <div class="d-lg-flex align-items-center gap-0-50">
+                            <input type="password" placeholder="Senha" class="form-control border-none">
+                            <button class="btn btn-danger text-white rounded-40 p-16 p-400 mt-0-50 mt-lg-0">OK</button>
+                        </div>
+                        <div class="d-flex justify-content-between mt-1 mt-lg-1">
+                            <a href="" class="text-decoration-none text-decoration-underline text-dark p-12 p-400">Esqueci minha senha</a>
+                            <a href="" class="text-decoration-none text-decoration-underline text-dark p-12 p-400">Primeiro acesso</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="py-1 copyright">
+    <div class="py-1 copyright bg-cinza">
         <div class="container">
             <div class="d-flex flex-column flex-lg-row text-center text-lg-start gap-1 justify-content-center align-items-center justify-content-sm-between">
-                <small class="text-muted small">Copyright &copy{{ date('Y') }} {{ env('APP_NAME') }}. Todos os direitos reservados. CNPJ 00.000.000/0000-00</small>
+                <small class="text-muted small text-dark">Copyright &copy{{ date('Y') }} {{ env('APP_NAME') }}. Todos os direitos reservados. CNPJ 00.000.000/0000-00</small>
                 <div class="col-12 col-md-6 col-lg-auto">
                     @inject('site', 'App\\Services\\SiteService')
                     @if ($site->hasPrivacy())
-                        <a href="{{ route_lang('privacy') }}" class="small" title="Política de privacidade">Política de privacidade</a>
+                        <a href="{{ route_lang('privacy') }}" class="small text-decoration-none text-dark" title="Política de privacidade">Política de privacidade</a>
                     @elseif ($site->useLgpd())
-                        <button onClick="ElliteLgpdApi.showModal()" class="btn btn-link p-0">Gerenciar preferências de cookies</button>
+                        <button onClick="ElliteLgpdApi.showModal()" class="btn btn-link p-0 text-decoration-none text-dark">Gerenciar preferências de cookies</button>
                     @endif
                 </div>
                 <div class="col-12  col-md-6 col-lg-auto d-flex justify-content-center justify-content-lg-end">
                     <a href="https://www.ellitedigital.com.br" target="_blank">
-                        <img src="https://www.ellitedigital.com.br/logo-sites/logo-ellite-black.svg" alt="Ellite Agência Digital" width="80" height="18">
+                        <img src="https://www.ellitedigital.com.br/logo-sites/logo-ellite-white.svg" alt="Ellite Agência Digital" width="80" height="18">
                     </a>
                 </div>
             </div>

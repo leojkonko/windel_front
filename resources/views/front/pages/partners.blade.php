@@ -5,7 +5,7 @@
     <section class="pt-lg-4 pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 d-flex align-items-center">
+                <div class="col-lg-7 d-flex align-items-center text-center text-lg-start">
                     <div class="">
                         <div class="w-100">
                             <svg class="ms-1" width="99" height="6" viewBox="0 0 99 6" fill="none" xmlns="http://www.w3.org/2000/svg">

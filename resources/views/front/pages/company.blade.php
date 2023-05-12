@@ -6,7 +6,7 @@
         <section class="py-lg-4 py-lg-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 text-center text-lg-start">
                         <div class="w-100">
                             <svg class="ms-1" width="99" height="6" viewBox="0 0 99 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" width="6" height="6" fill="#D9476D"/>
@@ -45,7 +45,7 @@ O foco de mercado são as <span class="p-600">micro, pequenas e médias empresas
             </div>
         </section>
         <x-diferenttial-itens />
-        <section class="pb-lg-4 pb-3 mt-0-50">
+        <section class=" mt-0-50">
             <div class="">
                 <div class="row">
                     <div class="empresa2-swiper swiper">
@@ -65,16 +65,16 @@ O foco de mercado são as <span class="p-600">micro, pequenas e médias empresas
                 </div>
             </div>
         </section>
-        <section class="pb-lg-4 pb-lg-4">
+        <section class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 position-relative">
+                    <div class="col-lg-6 d-flex align-items-center position-relative">
                         <div class="ratio ratio-21x9">
                             <img class="w-100 h-100 object-fit-cover rounded-3" src="{{ asset('front/images/backgrounds/empresa.png') }}" alt="Logo {{ env('APP_NAME') }}">
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <div class="px-lg-2">
+                    <div class="col-lg-6 d-flex align-items-center text-lg-start text-center">
+                        <div class="px-lg-2 pt-2 pt-lg-0">
                             <p class="p-400 p-16">
                                 A <span class="p-600">otimização dos processos e tarefas diárias</span> é realizada através de um sistema de gestão formado por módulos integrados, utilizados conforme a necessidade do cliente.
                             </p>

@@ -11,13 +11,39 @@ class ContactController extends Controller
     public function index(SiteService $site, ContactService $page)
     {
         $site->setAlternates('contact')
-            ->pushBreadCrumb('Contato')
-            ->setBreadTitle('Contato')
-            ->setTitle('Contato')
+            ->pushBreadCrumb('Fale conosco')
+            ->setBreadTitle('Fale conosco')
+            ->setTitle('Fale conosco')
             ->setDescriptionIfNotEmpty($page->getPage()->description)
             ->setKeywordsIfNotEmpty($page->getPage()->keywords);
         
         return view('front.pages.contact', [
+            
+        ]);
+    }
+    public function trabalhe(SiteService $site, ContactService $page)
+    {
+        $site->setAlternates('contact')
+            ->pushBreadCrumb('Trabalhe conosco')
+            ->setBreadTitle('Trabalhe conosco')
+            ->setTitle('Trabalhe conosco')
+            ->setDescriptionIfNotEmpty($page->getPage()->description)
+            ->setKeywordsIfNotEmpty($page->getPage()->keywords);
+        
+        return view('front.pages.trabalhe-conosco', [
+            
+        ]);
+    }
+    public function vaga(SiteService $site, ContactService $page)
+    {
+        $site->setAlternates('contact')
+            ->pushBreadCrumb('Programador Back-End')
+            ->setBreadTitle('Programador Back-End')
+            ->setTitle('Programador Back-End')
+            ->setDescriptionIfNotEmpty($page->getPage()->description)
+            ->setKeywordsIfNotEmpty($page->getPage()->keywords);
+        
+        return view('front.pages.vaga-detalhe', [
             
         ]);
     }

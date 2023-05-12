@@ -19,15 +19,15 @@
                     </div>
                 @endforeach
             </div>
-            <div class="swiper-button-prev rounded-circle bg-danger">
-                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 1L1 9L9 17" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                </svg>                     
+            <div class="swiper-button-prev rounded-circle bg-danger w-35 h-35">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12L16 20L24 28" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>                                      
             </div>
-            <div class="swiper-button-next rounded-circle bg-danger">
-                <svg width="1.25em" height="1.25em" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
+            <div class="swiper-button-next rounded-circle bg-danger w-35 h-35">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 28L24 20L16 12" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>                    
             </div>
         </div>
         <div class="position-relative">

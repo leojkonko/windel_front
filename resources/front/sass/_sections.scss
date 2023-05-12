@@ -13,12 +13,37 @@ body {
     bottom: -88px;
 }
 
+.h2 {
+    font-size: 32px;
+    line-height: 42px;
+
+    @media(max-width: 992px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
 .p-400 {
     font-weight: 400;
 }
 
 .p-600 {
     font-weight: 600;
+}
+
+.p-12 {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.p-14 {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.p-20 {
+    font-size: 20px;
+    line-height: 20px;
 }
 
 .p-16 {
@@ -63,4 +88,24 @@ body {
 .swiper-button-prev::after,
 .swiper-button-next::after {
     display: none !important;
+}
+
+.bg-cinza-lg {
+    @media(min-width:992px) {
+        background: $cinza;
+    }
+}
+
+.bg-cinza-sm {
+    @media(max-width:992px) {
+        background: $cinza;
+    }
+}
+
+.text-decoration-none {
+    color: #615E76 !important;
+
+    &:hover {
+        color: #969696;
+    }
 }
