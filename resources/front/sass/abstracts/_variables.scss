@@ -72,7 +72,7 @@ $info: $cyan;
 $warning: $yellow;
 $danger: #D9476D;
 $light: $gray-100;
-$dark: #615E76; //$gray-900;
+$dark: #272342; //$gray-900;
 $cinza: #d9d9d9;
 $cinza-claro: #F0F2F4;
 // scss-docs-end theme-color-variables
@@ -367,6 +367,7 @@ $spacers: ("0": 0,
     "4": calc(var(--bs-default-unit, $spacer) * 4),
     "5": calc(var(--bs-default-unit, $spacer) * 5),
     "19": 19rem,
+    "26": 26rem,
 );
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
@@ -378,11 +379,19 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
 
 // scss-docs-start position-map
 $position-values: (0: 0,
+    150: 150%,
+    70: 70%,
     50: 50%,
     15: 15%,
+    30: 30px,
     -5: -5%,
+    -8: -8%,
     -10: -10%,
     -50: -50%,
+    -48: -48px,
+    -40: -40px,
+    -35: -35%,
+    -110: -110px,
     //   100: 100%
 );
 // scss-docs-end position-map
@@ -536,6 +545,7 @@ $transition-collapse-width: width 0.35s ease;
 // scss-docs-start aspect-ratios
 $aspect-ratios: ("1x1": 100%,
     "6x9": calc(9 / 6 * 100%),
+    "7x9": calc(9 / 7 * 100%),
     "5x9": calc(9 / 5.5 * 100%),
     "16x9": calc(9 / 16 * 100%),
     "21x9": calc(9 / 21 * 100%),

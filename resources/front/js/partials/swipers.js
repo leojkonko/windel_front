@@ -5,10 +5,10 @@
  */
 
 new Swiper(".banner-swiper", {
-    // autoplay: {
-    // delay: 7500,
-    // disableOnInteraction: false,
-    //},
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
     rewind: false,
     navigation: {
         nextEl: ".banner-swiper .swiper-button-next",
@@ -54,16 +54,16 @@ new Swiper(".empresa-swiper", {
             slidesPerView: 5,
         },
         767: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
-        576: {
-            slidesPerView: 2,
+        480: {
+            slidesPerView: 3,
         },
     },
 });
 new Swiper(".empresa2-swiper", {
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 30,
     navigation: {
         nextEl: ".empresa2-swiper .swiper-button-next",
         prevEl: ".empresa2-swiper .swiper-button-prev",
@@ -105,6 +105,50 @@ new Swiper(".parceiros-swiper", {
         992: {
             slidesPerView: 4,
         },
+        767: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+    },
+});
+new Swiper(".blog-detalhe-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    //rewind: false,
+    navigation: {
+        nextEl: ".blog-detalhe-swiper .swiper-button-next",
+        prevEl: ".blog-detalhe-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".blog-detalhe-swiper .swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+    },
+});
+new Swiper(".windel-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    //rewind: false,
+    navigation: {
+        nextEl: ".windel-swiper .swiper-button-next",
+        prevEl: ".windel-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".windel-swiper .swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
+    breakpoints: {
         767: {
             slidesPerView: 3,
         },

@@ -3,35 +3,37 @@
 @section('content')
 
     <main id="empresa" class="row gx-0 gy-2 gy-lg-4 py-2 py-lg-4 overflow-hidden">
-        <section class="py-lg-4 py-lg-4">
+        <section id="solucoes" class="py-lg-4 py-lg-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 text-center text-lg-start">
-                        <div class="w-100">
-                            <svg class="ms-1" width="99" height="6" viewBox="0 0 99 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" width="6" height="6" fill="#D9476D"/>
-                                <rect x="46.5" width="6" height="6" fill="#D9476D"/>
-                                <rect x="92.5" width="6" height="6" fill="#D9476D"/>
-                            </svg>
+                        <div class="pe-lg-5">
+                            <div class="w-100">
+                                <svg class="ms-1" width="99" height="6" viewBox="0 0 99 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" width="6" height="6" fill="#D9476D"/>
+                                    <rect x="46.5" width="6" height="6" fill="#D9476D"/>
+                                    <rect x="92.5" width="6" height="6" fill="#D9476D"/>
+                                </svg>
+                            </div>
+                            <h2 class="w-100 py-1 h2 p-600 text-primary">
+                                    Nossa história
+                            </h2> 
+                            <p class="p-400 p-16">
+                                A Windel Sistemas é uma empresa desenvolvedora de <span class="p-600">softwares de gestão</span> cujo objetivo é o <span class="p-400">sucesso dos seus clientes</span> através da 
+                                automação dos processos e do uso da informação como ferramenta de gerenciamento.
+                            </p>
+                            <p class="p-400 p-16">
+                                No mercado desde 2001, a Windel, que iniciou suas atividades na cidade de Caxias do Sul, conta com 
+                                <span class="p-600">13 unidades de negócios</span> para atender seus mais de <span class="p-600">5.000 mil clientes ativos</span>.
+    
+                            </p>
+                            <p class="p-400 p-16">
+    O foco de mercado são as <span class="p-600">micro, pequenas e médias empresas</span> dos segmentos de <span class="p-600">indústria, comércio e serviços</span>.
+                            </p>
                         </div>
-                        <h2 class="w-100 py-1 h2 p-600 text-primary">
-                                Nossa história
-                        </h2> 
-                        <p class="p-400 p-16">
-                            A Windel Sistemas é uma empresa desenvolvedora de <span class="p-600">softwares de gestão</span> cujo objetivo é o <span class="p-400">sucesso dos seus clientes</span> através da 
-                            automação dos processos e do uso da informação como ferramenta de gerenciamento.
-                        </p>
-                        <p class="p-400 p-16">
-                            No mercado desde 2001, a Windel, que iniciou suas atividades na cidade de Caxias do Sul, conta com 
-                            <span class="p-600">13 unidades de negócios</span> para atender seus mais de <span class="p-600">5.000 mil clientes ativos</span>.
-
-                        </p>
-                        <p class="p-400 p-16">
-O foco de mercado são as <span class="p-600">micro, pequenas e médias empresas</span> dos segmentos de <span class="p-600">indústria, comércio e serviços</span>.
-                        </p>
                     </div>
                     <div class="col-lg-5 position-relative">
-                        <div class="ratio ratio-1x1">
+                        <div class="ratio ratio-12x9">
                             <img class="w-100 h-100 object-fit-cover rounded-3" src="{{ asset('front/images/backgrounds/empresa.png') }}" alt="Logo {{ env('APP_NAME') }}">
                             <div>
                                 <svg class="position-absolute start-50 top-50 translate-middle" width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,10 +45,13 @@ O foco de mercado são as <span class="p-600">micro, pequenas e médias empresas
                     </div>
                 </div>
             </div>
+            <svg class="position-absolute start-0 bottom--50 d-none d-lg-block" width="197" height="506" viewBox="0 0 197 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-36.8326 504.942C-76.3489 509.192 -118.829 485.113 -148.881 456.056C-179.429 427 -197.3 393.214 -221.135 358.437C-245.219 323.412 -274.768 286.9 -286.17 239.69C-297.323 192.728 -290.079 134.82 -260.474 84.8498C-230.371 34.8794 -178.157 -7.40126 -130.2 2.75704C-82.2434 12.4183 -39.2903 74.2705 12.8754 108.532C64.7928 142.545 125.178 148.719 160.445 181.5C195.713 214.281 205.616 273.421 187.196 320.153C168.776 366.885 122.282 400.961 80.7591 434.537C39.2359 468.113 2.68368 500.692 -36.8326 504.942Z" stroke="#D9476D"/>
+            </svg>                
         </section>
         <x-diferenttial-itens />
         <section class=" mt-0-50">
-            <div class="">
+            <div class="px-1 px-lg-0">
                 <div class="row">
                     <div class="empresa2-swiper swiper">
                         <div class="swiper-wrapper mb-4">

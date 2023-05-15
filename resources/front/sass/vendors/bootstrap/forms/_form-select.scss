@@ -8,7 +8,8 @@
     width: 100%;
     padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
     -moz-padding-start: subtract($form-select-padding-x, 3px); // See https://github.com/twbs/bootstrap/issues/32636
-    color: $input-color;
+    //color: $input-color;
+    color: #615E76;
     background-color: $input-bg;
     background-clip: padding-box;
     border: none;

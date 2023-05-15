@@ -4,10 +4,10 @@
 
 @section('content')
     <main id="contato">
-        <section class="py-2 py-lg-4">
+        <section id="solucoes" class="py-2 py-lg-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 mt-2 mt-lg-0">
+                    <div class="col-lg-4 mt-2 mt-lg-0" data-aos="zoom-out">
                         <div class="d-flex justify-content-center align-items-center rounded-40 bg-cinza-claro h-120 ">
                             <div class="p-1">
                                 <img class="" width="60px" src="{{ asset('front/images/backgrounds/map-location.png') }}" alt="Logo {{ env('APP_NAME') }}">
@@ -22,7 +22,7 @@
                             </div>  
                         </div>                          
                     </div>
-                    <div class="col-lg-4 mt-2 mt-lg-0">
+                    <div class="col-lg-4 mt-2 mt-lg-0" data-aos="zoom-out">
                         <div class="d-flex justify-content-center align-items-center rounded-40 bg-cinza-claro h-120 ">
                             <div class="p-1">
                                 <img class="" width="60px" src="{{ asset('front/images/backgrounds/email.png') }}" alt="Logo {{ env('APP_NAME') }}">
@@ -37,7 +37,7 @@
                             </div>  
                         </div>                          
                     </div>
-                    <div class="col-lg-4 mt-2 mt-lg-0 mb-3 mb-lg-0">
+                    <div class="col-lg-4 mt-2 mt-lg-0 mb-3 mb-lg-0" data-aos="zoom-out">
                         <div class="d-flex justify-content-center align-items-center rounded-40 bg-cinza-claro h-120 ">
                             <div class="p-1">
                                 <img class="" width="60px" src="{{ asset('front/images/backgrounds/phone.png') }}" alt="Logo {{ env('APP_NAME') }}">

@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
     {{--  --}}
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- Front css --}}
     @vite(['resources/front/sass/vendors/bootstrap/bootstrap.scss', 'resources/front/sass/main.scss'])
 
@@ -46,16 +46,18 @@
             <div class="container ">
                 <div class="row">
                     <div class="col-6 justify-content-start d-flex align-items-center gap-1">
-                        <p class="m-0 p-14 p-400 ">Vendas <span class="p-600">0800 600 220</span></p>
+                        <p class="m-0 p-14 p-600 ">Vendas <span class="p-600">0800 600 220</span></p>
                         <a class="text-decoration-none" href="{{ route('solicitacao') }}">
-                            <button class="p-400 p-14 btn btn-outline-danger rounded-40 text-dark">Solicitar Demonstração</button>
+                            <button class="p-600 p-14 btn btn-outline-danger rounded-40 text-dark">Solicitar Demonstração</button>
                         </a>
                     </div>
                     <div class="col-6 justify-content-end d-flex align-items-center gap-1">
                         <a href="{{ route('suporte') }}" class="text-decoration-none text-dark">
-                            <p class="m-0 p-14 p-400"><span class="p-600">Central de suporte</span></p>
+                            <p class="m-0 p-14 p-600"><span class="p-600">Central de suporte</span></p>
                         </a>
-                        <p class="m-0 p-14 p-400">Área do cliente</p>
+                        <a href="{{ route('home') }}" class="text-decoration-none text-dark">
+                            <p class="m-0 p-14 p-600">Área do cliente</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -80,9 +82,6 @@
                         </li>
                         <li>
                             <a href="{{ route('partners') }}" class="text-decoration-none p-16 p-400 btn btn-outline-cinza rounded-40 text-black">Parceiros</a>
-                        </li>
-                        <li>
-                            
                         </li>
                         <li>
                             <div class="dropdown">
@@ -115,38 +114,38 @@
             background-repeat: no-repeat;
         background-size: cover;">
                         <div class="offcanvas-header w-100">
-                            <button type="button" class="btn-close me-auto" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasHeader" aria-label="Close"></button>
+                            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasHeader" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <div class=" d-flex justify-content-center">
                                 {{--<x-site-menu />--}}
                                 <ul class="list-unstyled d-block">
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Empresa</a>
+                                        <a href="{{ route('company') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Empresa</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Soluções</a>
+                                        <a href="{{ route('solutions') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Soluções</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Blog</a>
+                                        <a href="{{ route('blog') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Blog</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Parceiros</a>
+                                        <a href="{{ route('partners') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Parceiros</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Fale conosco</a>
+                                        <a href="{{ route('contact') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Fale conosco</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Trabalhe conosco</a>
+                                        <a href="{{ route('trabalhe-conosco') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Trabalhe conosco</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Solicitar demonstração</a>
+                                        <a href="{{ route('solicitacao') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Solicitar demonstração</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Área do cliente</a>
+                                        <a href="{{ route('home') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Área do cliente</a>
                                     </li>
                                     <li class="mb-1">
-                                        <a href="" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Central de ajuda</a>
+                                        <a href="{{ route('suporte') }}" class="text-decoration-none text-dark btn btn-outline-danger p-22 p-600 rounded-40">Central de ajuda</a>
                                     </li>
                                 </ul>
                             </div>

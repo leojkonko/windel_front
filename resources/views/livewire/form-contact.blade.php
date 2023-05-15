@@ -13,7 +13,9 @@
         <input type="text" placeholder="CNPJ*" class="form-control mb-0-50" wire:model.defer="phone" required>
     </div>
     <div class="col-12 mt-0">
-        <input type="text" placeholder="Assunto*" class="form-control mb-0-50" wire:model.defer="phone" required>
+        <select name="" id="" placeholder="Assunto*" class="form-select mb-0-50">
+            <option value="" class="p-16 p-400" selected>Assunto*</option>
+        </select>
     </div>
     <div class="col-12 mt-0">
         <textarea id="" Placeholder="Mensagem*" class="form-control" rows="5" wire:model.defer="message" required></textarea>
