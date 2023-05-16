@@ -115,7 +115,7 @@ new Swiper(".parceiros-swiper", {
 });
 new Swiper(".blog-detalhe-swiper", {
     slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 20,
     //rewind: false,
     navigation: {
         nextEl: ".blog-detalhe-swiper .swiper-button-next",

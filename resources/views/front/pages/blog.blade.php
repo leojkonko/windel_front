@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row g-2">
                     <div class="d-flex">
-                        <h2 class="w-100 text-lg-start text-center h2 p-600 text-primary">Nossa últimas postagens</h2>
+                        <h2 class="w-100 text-start h2 p-600 text-primary">Nossa últimas postagens</h2>
                         <button class="btn btn-outline-cinza rounded-40 text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             Categorias
                             <svg class="ms-0-50" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

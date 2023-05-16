@@ -1,6 +1,6 @@
 @inject('site', 'App\\Services\\SiteService')
 
-<section class="bg-cinza-claro position-relative overflow-hidden pt-lg-26 pt-19 pb-4 d-flex justify-content-center">
+<section class="bg-cinza-claro position-relative overflow-hidden pt-lg-21 pt-19 pb-4 d-flex justify-content-center">
     <img class="w-100 h-100 top-0 position-absolute object-fit-cover" src="{{ asset('front/images/backgrounds/breadcrumb.png') }}" alt="Logo {{ env('APP_NAME') }}"> 
     <div class="container d-flex align-items-center justify-content-center position-absolute 
     z-index-1 top-50">

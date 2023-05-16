@@ -70,7 +70,7 @@
             </div>
             <div class="container position-relative">
                 <div class="row">
-                    <div class="col-lg-10 d-flex m-auto">
+                    <div class="col-lg-12 d-flex m-auto">
                         <div class="swiper blog-detalhe-swiper">
                             <div class="swiper-wrapper">
                                 
@@ -81,7 +81,7 @@
                                                 <img class="w-100 h-100 object-fit-cover rounded-40-topp" src="{{ asset('front/images/backgrounds/blog.png') }}" alt="Logo {{ env('APP_NAME') }}">
                                             </a>    
                                         </div>
-                                        <div class="bg-cinza-claro p-2 p-lg-3 rounded-40-bottomm text-lg-start text-center">
+                                        <div class="bg-cinza-claro p-1 p-lg-2 rounded-40-bottomm text-lg-start text-center">
                                             <p class="p-16 p-400 text-dark">20/05/2002</p>
                                             <h2 class="text-dark h2 p-600">TEF: O que é, como funciona, quem está obrigado, onde adquirir</h2>
                                             <p class="p-16 p-400 text-dark pt-1">
@@ -95,12 +95,12 @@
                             @endforeach
                                
                             </div>
-                            <div class="swiper-button-prev rounded-circle bg-danger w-35 h-35 start-30 top-50">
+                            <div class="swiper-button-prev rounded-circle bg-danger w-35 h-35 start-0 top-50">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M24 12L16 20L24 28" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
                                 </svg>                                      
                             </div>
-                            <div class="swiper-button-next rounded-circle bg-danger w-35 h-35 end-30 top-50">
+                            <div class="swiper-button-next rounded-circle bg-danger w-35 h-35 end-0 top-50">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16 28L24 20L16 12" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
                                 </svg>                    

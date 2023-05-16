@@ -3,7 +3,7 @@
 @section('content')
 
     <main id="empresa" class="row gx-0 gy-2 gy-lg-4 py-2 py-lg-4 overflow-hidden">
-        <section id="solucoes" class="py-lg-4 py-lg-4">
+        <section id="solucoes" class="pb-lg-4 pb-lg-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 text-center text-lg-start">
@@ -57,9 +57,11 @@
                         <div class="swiper-wrapper mb-4">
                             @foreach (range(0,8) as $banner)
                                 <div class="swiper-slide">
-                                    <div class="ratio ratio-13x9">
-                                        <img class="w-100 h-100 object-fit-cover rounded-3" src="{{ asset('front/images/backgrounds/empresa2.png') }}" alt="Logo {{ env('APP_NAME') }}"> 
-                                    </div>
+                                    <a href="{{ asset('front/images/backgrounds/empresa2.png') }}" data-fancybox="gallery">
+                                        <div class="ratio ratio-13x9">
+                                            <img class="w-100 h-100 object-fit-cover rounded-3" src="{{ asset('front/images/backgrounds/empresa2.png') }}" alt="Logo {{ env('APP_NAME') }}"> 
+                                        </div>
+                                    </a>
                                 </div>
                             @endforeach
                         </div>

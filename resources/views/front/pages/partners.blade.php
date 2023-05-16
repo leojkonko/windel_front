@@ -2,7 +2,7 @@
 
 @section('content')
 <main id="partners">
-    <section class="pt-lg-4 pt-3" id="solucoes" data-aos="zoom-in-left">
+    <section class="pt-2" id="solucoes" data-aos="zoom-in-left">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 d-flex align-items-center text-center text-lg-start">

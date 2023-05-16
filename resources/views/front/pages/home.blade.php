@@ -70,16 +70,17 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-5 m-auto " style="background-image: url({{ asset('front/images/backgrounds/w.png') }}); 
+                    <div class="col-1"></div>
+                    <div class="col-lg-3 m-auto " style="background-image: url({{ asset('front/images/backgrounds/w.png') }}); 
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: 100%;
                     background-position-x: 50%;
                     ">
                        <div class="row d-flex align-items-center justify-content-evenly py-2 py-lg-0">
                             @foreach (range(0,4) as $i)
-                                <div class="{{ $i >= 3 ? 'mt-1' : ' ' }} col-lg-3 col-4 d-flex justify-content-center align-items-center mx-0-50 flex-column">
-                                    <div class="ratio ratio-1x1 bg-danger p-lg-2 p-1 rounded-circle shadow-lg">
-                                        <img class="w-100 h-100 object-fit-cover p-lg-2 p-1" src="{{ asset('front/images/icons/diferenciais.svg') }}" alt="Logo {{ env('APP_NAME') }}">
+                                <div class="{{ $i >= 3 ? 'mt-1' : ' ' }} col-md-3 col-4 d-flex justify-content-center align-items-center mx-0-50 flex-column">
+                                    <div class="ratio ratio-1x1 bg-danger p-lg-1 p-1 p-sm-2 rounded-circle shadow-lg">
+                                        <img class="w-100 h-100 object-fit-cover p-lg-1 p-1 p-sm-2" src="{{ asset('front/images/icons/diferenciais.svg') }}" alt="Logo {{ env('APP_NAME') }}">
                                         
                                     </div>
                                     <p class="p-16 p-400 text-center pt-1">Suporte especializado</p>
@@ -87,6 +88,7 @@
                             @endforeach
                         </div>
                     </div>
+                    <div class="col-1"></div>
                     <div class="col-lg-4 g-0">
                         <div class="ratio ratio-7x9 mt-4 mt-lg-0">
                             <img class="w-100 h-100 object-fit-cover rounded-40-bottom" src="{{ asset('front/images/backgrounds/bg-diferenciais.png') }}" alt="Logo {{ env('APP_NAME') }}">
